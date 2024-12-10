@@ -9,8 +9,6 @@ body {
 }
 
 .head {
-  min-height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -91,7 +89,7 @@ body {
 .head-txt {
   /* background-color: aqua; */
   position: relative;
-  top: 100px;
+  top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,6 +127,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 
 .skills h2 {
@@ -435,14 +434,14 @@ footer a{
   font-weight: 600;
 }
 
-@media (max-width:1000px)
+@media (max-width:1050px)
 {
   .head-txt h1 {
     font-size: 50px;
   } 
 
   .skills{
-    margin-top: 20px;
+    margin-top: 60px;
   }
 
   .slide-track {
@@ -486,6 +485,7 @@ footer a{
 
 @media (max-width:700px)
 {
+
   #nav {
     display: none;
   }
@@ -531,6 +531,10 @@ footer a{
 {
   .head-txt h1{
     font-size: 22px;
+  }
+
+  .skills{
+    margin-top: 40px;
   }
 
   .slider {
