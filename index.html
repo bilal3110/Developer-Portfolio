@@ -1,260 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS File -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Bilal A.</title>
   </head>
-
   <body>
-    <section class="head">
-      <nav>
-        <a href="" id="logo"> Bilal A. </a>
-        <ul id="nav">
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="menu" id="menu"><i class="fa-solid fa-bars"></i></div>
-      </nav>
-      <div class="resNav" id="resNav">
-        <ul>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <nav>
+      <div class="logo">
+        <a>{Bilal A.}</a>
       </div>
-      <div class="head-txt">
-        <h1>Hey, I'm Bilal, a Full Stack</h1>
-        <h1 class="my-2"><span>Software Developer</span></h1>
-        <span id="head-icons">
-          <a href="https://github.com/bilal3110" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-          <a href="https://www.linkedin.com/in/bilal-aqeel-b7556321b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/webdev.by.bilal/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+      <div class="nav-list">
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="theme-switcher">
+          <div class="switch" id="themeSwitch">
+            <div class="slider">
+              <svg
+                class="icon sun-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="5" />
+                <path
+                  d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"
+                />
+              </svg>
+              <svg
+                class="icon moon-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+    <main id="home">
+      <div class="head-text">
+        <h3>Hey there!, I'm-</h3>
+        <h1>Bilal Aqeel</h1>
+        <p>
+          A self‑taught software engineer driven by a relentless passion for
+          computer science and building innovative digital solutions.
+        </p>
+        <span class="head-btns">
+          <a href=""><i class="fa-brands fa-github"></i>Github</a>
+          <a href=""><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+          <a href=""><i class="fa-brands fa-instagram"></i>Instagram</a>
+        </span>
+      </div>
+    </main>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I’m a self-taught <span id="abt-sub">Software Engineer</span> with 1
+          year of hands-on experience in web development, primarily focused on
+          building scalable and efficient backend systems. My core expertise
+          lies in
+          <span id="abt-sub"> Laravel, PHP, JavaScript, and Ajax,</span> with a
+          strong command over building and integrating
+          <span id="abt-sub">RESTful APIs</span>. I have developed full-fledged
+          systems like real estate platforms, learning management systems, and
+          intelligent recognition apps — all tailored to solve real-world
+          problems. While backend development is my forte, I’m deeply passionate
+          about emerging technologies like
+          <span id="abt-sub">AI, Machine Learning</span>, and building
+          <span id="abt-sub">SaaS-based solutions</span> that serve practical
+          business needs. I thrive on clean architecture, data handling, and
+          turning business logic into working code.
+        </p>
+      </div>
+      <div class="about-img">
+        <span>
+          <img src="images/profile.jpg" alt="Profile Image" />
         </span>
       </div>
     </section>
 
-    <section class="skills" id="skills">
-      <h2>My Skills</h2>
-      <div class="slider">
-        <div class="slide-track">
-          <div class="slide">
-            <img src="images/67878.png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/789090.png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/7666.png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/pngegg (1).png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/pngegg (2).png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/pngegg (3).png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/pngegg (4).png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/pngegg (5).png" alt="" />
-          </div>
-
-          <!-- Duplicate -->
-          <div class="slide">
-            <img src="images/67878.png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/789090.png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/7666.png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/pngegg (1).png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/pngegg (2).png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/pngegg (3).png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/pngegg (4).png" alt="" />
-          </div>
-
-          <div class="slide">
-            <img src="images/pngegg (5).png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="services my-3" id="services">
-      <h2>My Services</h2>
+    <!-- Services -->
+    <section class="services" id="services">
+      <h1 id="s-head">What I Offer</h1>
       <div class="service-cards">
         <div class="s-card">
-            <h3><i class="fa-solid fa-desktop"></i>FRONTEND DEVELOPMENT</h3>
+          <svg
+            fill="#6366f1"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 392.186 392.186"
+            xml:space="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <g>
+                  <g>
+                    <path
+                      d="M368.62,17.951H23.568C10.57,17.951,0,28.524,0,41.52v309.146c0,12.996,10.57,23.568,23.568,23.568h345.053 c12.994,0,23.564-10.572,23.564-23.568V41.52C392.188,28.525,381.614,17.951,368.62,17.951z M297.56,57.528 c0-4.806,3.896-8.703,8.701-8.703h8.703c4.808,0,8.701,3.896,8.701,8.703v9.863c0,4.806-3.896,8.702-8.701,8.702h-8.703 c-4.805,0-8.701-3.896-8.701-8.702V57.528z M257.093,57.528c0-4.806,3.898-8.703,8.703-8.703h8.701 c4.805,0,8.703,3.896,8.703,8.703v9.863c0,4.806-3.898,8.702-8.703,8.702h-8.701c-4.805,0-8.703-3.896-8.703-8.702V57.528z M363.903,345.951H28.282V102.235h335.621V345.951L363.903,345.951z M364.132,67.391c0,4.806-3.896,8.702-8.701,8.702h-8.703 c-4.809,0-8.702-3.896-8.702-8.702v-9.863c0-4.806,3.896-8.703,8.702-8.703h8.703c4.806,0,8.701,3.896,8.701,8.703V67.391z"
+                    ></path>
+                    <path
+                      d="M84.185,233.284l63.084,29.336c1.631,0.755,3.367,1.138,5.162,1.138c2.338,0,4.617-0.664,6.598-1.924 c3.547-2.267,5.666-6.13,5.666-10.334v-0.322c0-4.752-2.785-9.116-7.096-11.118l-39.455-18.332l39.455-18.334 c4.311-2.004,7.096-6.367,7.096-11.117v-0.319c0-4.21-2.119-8.075-5.666-10.334c-1.961-1.253-4.246-1.916-6.605-1.916 c-1.779,0-3.563,0.391-5.16,1.133l-63.08,29.333c-4.307,2.004-7.09,6.369-7.09,11.117v0.877 C77.093,226.909,79.874,231.272,84.185,233.284z"
+                    ></path>
+                    <path
+                      d="M165.257,293.036c2.301,3.149,6.002,5.03,9.9,5.03h0.316c5.352,0,10.041-3.426,11.672-8.517L228.7,160.788 c1.192-3.716,0.531-7.818-1.771-10.973c-2.301-3.15-6.002-5.03-9.901-5.03h-0.315c-5.354,0-10.048,3.425-11.679,8.516 l-41.559,128.771C162.292,285.793,162.958,289.889,165.257,293.036z"
+                    ></path>
+                    <path
+                      d="M227.49,192.276c0,4.745,2.783,9.109,7.095,11.123l39.455,18.329l-39.455,18.33c-4.31,2.004-7.095,6.368-7.095,11.118 v0.322c0,4.205,2.117,8.068,5.668,10.336c1.974,1.258,4.254,1.924,6.595,1.924c1.793,0,3.528-0.383,5.17-1.142l63.08-29.335 c4.307-2.009,7.09-6.372,7.09-11.115v-0.877c0-4.748-2.783-9.113-7.094-11.117l-63.08-29.333 c-1.591-0.74-3.373-1.131-5.152-1.131c-2.355,0-4.643,0.661-6.604,1.912c-3.551,2.263-5.67,6.127-5.67,10.337v0.318H227.49 L227.49,192.276z"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <h1>Full-Stack Laravel Web Development</h1>
           <p>
-            Elevate your digital presence with my specialized Frontend
-            Development services. As a dedicated Full Stack Software Developer,
-            I bring a keen eye for design and a mastery of cutting-edge
-            technologies to the forefront of your user experience
+            I build full-featured web apps using Laravel, PHP, and MySQL,
+            following clean architecture and modern coding standards. From
+            authentication to dynamic interfaces, I manage both backend and
+            frontend using Blade, JavaScript, and AJAX for seamless performance.
           </p>
         </div>
         <div class="s-card">
-            <h3><i class="fa-solid fa-code"></i>BACKEND DEVELOPMENT</h3>
-            <p>Empower your digital infrastructure with my specialized Backend Development services. As a seasoned
-                Full Stack Software Developer, I excel in architecting robust server-side solutions that form the
-                backbone of your applications</p>
+          <svg
+            fill="#6366f1"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 295.5 295.5"
+            xml:space="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path
+                  d="M288,129.355h-28.79v-12.1c0-4.143-3.357-7.5-7.5-7.5h-12.499c-2.279-9.588-5.984-18.663-11.063-27.101l8.963-9.11 c2.871-2.918,2.871-7.6,0-10.519l-21.006-21.357c-1.409-1.434-3.336-2.241-5.347-2.241c-2.011,0-3.937,0.808-5.347,2.24 l-8.829,8.976c-8.244-5.102-17.111-8.833-26.482-11.143V26.646c0-4.143-3.357-7.5-7.5-7.5h-29.699c-4.143,0-7.5,3.357-7.5,7.5 v12.855c-9.369,2.309-18.239,6.04-26.487,11.144l-8.821-8.969c-1.41-1.434-3.336-2.241-5.347-2.241h-0.001 c-2.01,0-3.937,0.807-5.346,2.24L58.392,63.026c-2.872,2.918-2.872,7.601-0.001,10.519l8.962,9.109 c-5.078,8.437-8.782,17.511-11.063,27.1H43.79c-4.143,0-7.5,3.357-7.5,7.5v12.1H7.5c-4.143,0-7.5,3.357-7.5,7.5v132 c0,4.143,3.357,7.5,7.5,7.5H288c4.143,0,7.5-3.357,7.5-7.5v-132C295.5,132.712,292.143,129.355,288,129.355z M51.29,124.755h11.121 c3.656,0,6.78-2.637,7.394-6.242c2.007-11.793,6.473-22.75,13.271-32.565c2.052-2.961,1.708-6.962-0.818-9.53l-7.999-8.131 l10.485-10.657l7.819,7.951c2.591,2.632,6.71,2.989,9.715,0.839C111.903,59.526,122.644,55,134.2,52.968 c3.586-0.631,6.201-3.746,6.201-7.387V34.146h14.699v11.434c0,3.641,2.614,6.755,6.199,7.387c11.561,2.035,22.3,6.561,31.918,13.45 c3.003,2.152,7.124,1.794,9.714-0.837l7.827-7.957l10.485,10.661l-8.002,8.134c-2.526,2.568-2.87,6.57-0.818,9.531 c6.802,9.816,11.267,20.772,13.269,32.563c0.613,3.605,3.737,6.244,7.395,6.244h11.123v4.6h-56.6 c-1.521-20.951-18.809-37.529-39.859-37.529s-38.34,16.578-39.861,37.529h-56.6V124.755z M122.946,129.355 c1.459-12.668,12.023-22.529,24.809-22.529c12.779,0,23.34,9.861,24.799,22.529H122.946z M280.5,261.354H15v-117h265.5V261.354z"
+                ></path>
+                <path
+                  d="M40.5,177.355H57c4.143,0,7.5-3.357,7.5-7.5c0-4.143-3.357-7.5-7.5-7.5H40.5c-4.143,0-7.5,3.357-7.5,7.5 C33,173.997,36.357,177.355,40.5,177.355z"
+                ></path>
+                <path
+                  d="M90,177.355h16.5c4.143,0,7.5-3.357,7.5-7.5c0-4.143-3.357-7.5-7.5-7.5H90c-4.143,0-7.5,3.357-7.5,7.5 C82.5,173.997,85.857,177.355,90,177.355z"
+                ></path>
+                <path
+                  d="M139.5,177.355H156c4.143,0,7.5-3.357,7.5-7.5c0-4.143-3.357-7.5-7.5-7.5h-16.5c-4.143,0-7.5,3.357-7.5,7.5 C132,173.997,135.357,177.355,139.5,177.355z"
+                ></path>
+                <path
+                  d="M189,177.355h16.5c4.143,0,7.5-3.357,7.5-7.5c0-4.143-3.357-7.5-7.5-7.5H189c-4.143,0-7.5,3.357-7.5,7.5 C181.5,173.997,184.857,177.355,189,177.355z"
+                ></path>
+                <path
+                  d="M238.5,177.355H255c4.143,0,7.5-3.357,7.5-7.5c0-4.143-3.357-7.5-7.5-7.5h-16.5c-4.143,0-7.5,3.357-7.5,7.5 C231,173.997,234.357,177.355,238.5,177.355z"
+                ></path>
+                <path
+                  d="M40.5,243.355H57c4.143,0,7.5-3.357,7.5-7.5c0-4.143-3.357-7.5-7.5-7.5H40.5c-4.143,0-7.5,3.357-7.5,7.5 C33,239.997,36.357,243.355,40.5,243.355z"
+                ></path>
+                <path
+                  d="M205.5,228.355H89.75c-4.143,0-7.5,3.357-7.5,7.5c0,4.143,3.357,7.5,7.5,7.5H205.5c4.143,0,7.5-3.357,7.5-7.5 C213,231.712,209.643,228.355,205.5,228.355z"
+                ></path>
+                <path
+                  d="M255,228.355h-16.5c-4.143,0-7.5,3.357-7.5,7.5c0,4.143,3.357,7.5,7.5,7.5H255c4.143,0,7.5-3.357,7.5-7.5 C262.5,231.712,259.143,228.355,255,228.355z"
+                ></path>
+                <path
+                  d="M57.75,202.855c0,4.143,3.357,7.5,7.5,7.5h16.5c4.143,0,7.5-3.357,7.5-7.5c0-4.143-3.357-7.5-7.5-7.5h-16.5 C61.107,195.355,57.75,198.712,57.75,202.855z"
+                ></path>
+                <path
+                  d="M107.25,202.855c0,4.143,3.357,7.5,7.5,7.5h16.5c4.143,0,7.5-3.357,7.5-7.5c0-4.143-3.357-7.5-7.5-7.5h-16.5 C110.607,195.355,107.25,198.712,107.25,202.855z"
+                ></path>
+                <path
+                  d="M156.75,202.855c0,4.143,3.357,7.5,7.5,7.5h16.5c4.143,0,7.5-3.357,7.5-7.5c0-4.143-3.357-7.5-7.5-7.5h-16.5 C160.107,195.355,156.75,198.712,156.75,202.855z"
+                ></path>
+                <path
+                  d="M206.25,202.855c0,4.143,3.357,7.5,7.5,7.5h16.5c4.143,0,7.5-3.357,7.5-7.5c0-4.143-3.357-7.5-7.5-7.5h-16.5 C209.607,195.355,206.25,198.712,206.25,202.855z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <h1>Backend Engineering</h1>
+          <p>
+            I focus on clean logic, performance tuning, and database
+            optimization using Laravel, PHP, and MySQL. My approach ensures
+            stability, scalability, and flexibility for complex systems like
+            SaaS platforms and custom business tools.
+          </p>
         </div>
-
         <div class="s-card">
-            <h3><i class="fa-solid fa-laptop-code"></i></i>ERROR HANDLING</h3>
-            <p>Specialize in diagnosing and resolving Laravel bugs, PHP errors, and other web application issues to ensure your website operates seamlessly. From complex Laravel errors to PHP glitches or database challenges, I deliver efficient and effective solutions.</p>
+          <svg
+            fill="#6366f1"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 380 380"
+            xml:space="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path
+                  d="M368.317,46.487H11.684C5.241,46.487,0,51.73,0,58.173v263.656c0,6.442,5.241,11.684,11.684,11.684h356.634 c6.442,0,11.683-5.242,11.683-11.684V58.173C380,51.73,374.76,46.487,368.317,46.487z M280.949,259.268 c5.162-12.192,17.053-20.07,30.295-20.07c4.411,0,8.721,0.878,12.813,2.61c16.696,7.072,24.529,26.408,17.461,43.105 c-5.167,12.191-17.058,20.068-30.294,20.068c0,0,0,0-0.001,0c-4.411,0-8.721-0.878-12.81-2.611 c-8.089-3.424-14.361-9.793-17.659-17.935C277.455,276.294,277.524,267.356,280.949,259.268z M320.868,79.771 c6.844,0,12.387,5.547,12.387,12.387c0,6.842-5.543,12.387-12.387,12.387c-6.839,0-12.385-5.545-12.385-12.387 C308.483,85.318,314.029,79.771,320.868,79.771z M283.715,79.771c6.839,0,12.386,5.547,12.386,12.387 c0,6.842-5.547,12.387-12.386,12.387c-6.839,0-12.387-5.545-12.387-12.387C271.328,85.318,276.876,79.771,283.715,79.771z M246.561,79.771c6.839,0,12.381,5.547,12.381,12.387c0,6.842-5.542,12.387-12.381,12.387c-6.844,0-12.387-5.545-12.387-12.387 C234.175,85.318,239.718,79.771,246.561,79.771z M21.27,314.01V141.424H358.73v67.274c-1.537-2.202-3.677-4.02-6.327-5.143 l-20.614-8.726c-1.835-0.778-3.771-1.172-5.754-1.172c-5.956,0-11.303,3.54-13.623,9.02l-1.253,2.959 c-9.227,0.129-18.381,2.255-26.728,6.193l-2.426-2.107c-1.174-1.018-2.499-1.841-3.932-2.447c-1.841-0.779-3.782-1.174-5.771-1.174 c-4.276,0-8.341,1.858-11.154,5.099l-14.671,16.915c-2.583,2.986-3.855,6.794-3.581,10.735c0.285,3.941,2.084,7.535,5.064,10.115 l2.417,2.098c-2.755,8.849-3.563,18.179-2.365,27.344l-2.749,1.654c-6.981,4.2-9.242,13.302-5.039,20.293L249.044,315H22.26 C21.714,315,21.27,314.556,21.27,314.01z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <h1>API Development & Integration</h1>
+          <p>
+            I create and integrate robust RESTful APIs for Laravel-based apps,
+            enabling smooth communication with third-party services or mobile
+            frontends. I ensure secure, fast, and well-documented API layers
+            using Laravel’s built-in tools and best practices.
+          </p>
+        </div>
+        <div class="s-card">
+          <svg
+            fill="#6366f1"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 94.504 94.504"
+            xml:space="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <g>
+                  <path
+                    d="M93.918,45.833L69.799,21.714c-0.75-0.75-2.077-0.75-2.827,0l-5.229,5.229c-0.781,0.781-0.781,2.047,0,2.828 l17.477,17.475L61.744,64.724c-0.781,0.781-0.781,2.047,0,2.828l5.229,5.229c0.375,0.375,0.884,0.587,1.414,0.587 c0.529,0,1.039-0.212,1.414-0.587l24.117-24.118C94.699,47.881,94.699,46.614,93.918,45.833z"
+                  ></path>
+                  <path
+                    d="M32.759,64.724L15.285,47.248l17.477-17.475c0.375-0.375,0.586-0.883,0.586-1.414c0-0.53-0.21-1.039-0.586-1.414 l-5.229-5.229c-0.375-0.375-0.884-0.586-1.414-0.586c-0.53,0-1.039,0.211-1.414,0.586L0.585,45.833 c-0.781,0.781-0.781,2.047,0,2.829L24.704,72.78c0.375,0.375,0.884,0.587,1.414,0.587c0.53,0,1.039-0.212,1.414-0.587l5.229-5.229 C33.542,66.771,33.542,65.505,32.759,64.724z"
+                  ></path>
+                  <path
+                    d="M60.967,13.6c-0.254-0.466-0.682-0.812-1.19-0.962l-4.239-1.251c-1.058-0.314-2.172,0.293-2.484,1.352L33.375,79.382 c-0.15,0.509-0.092,1.056,0.161,1.521c0.253,0.467,0.682,0.812,1.19,0.963l4.239,1.251c0.189,0.056,0.38,0.083,0.567,0.083 c0.863,0,1.66-0.564,1.917-1.435l19.679-66.644C61.278,14.612,61.221,14.065,60.967,13.6z"
+                  ></path>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <h1>Bug Fixing & Optimization</h1>
+          <p>
+            I identify and resolve issues across the stack — whether it’s a
+            Laravel route bug, AJAX issue, or JavaScript conflict. I also
+            improve performance, refactor messy code, and ensure your
+            application runs fast, smooth, and error-free.
+          </p>
         </div>
       </div>
     </section>
 
-    <section class="projects" id="projects">
-        <h2>My Projects</h2>
-        <div class="project-list">
-            <div class="project">
-                <span>
-                    <img src="images/6.jpeg" alt="">
-                </span>
-                <h3>Blog Post</h3>
-                <p>Developed a Laravel-based blog site where users can browse posts by category or search by keywords. The platform is user-friendly, efficient, and highlights my expertise in web development..</p>
-                <span>
-                    <a href="https://github.com/bilal3110/Blog-Post-Laravel" target="_blank">View Code</a>
-                </span>
-            </div>
-
-            <div class="project">
-                <span>
-                    <img src="images/7.jpeg" alt="">
-                </span>
-                <h3>School Management System</h3>
-                <p>This LMS is a comprehensive solution featuring a user-friendly school website, an admin panel for managing courses and students, and a student portal for accessing materials and tracking progress. It enhanced my skills in developing scalable and efficient web applications.</p>
-                <span>
-                    <a href="https://github.com/bilal3110/LMS/tree/project-fix" target="_blank">View Code</a>
-                </span>
-            </div>
-
-            <div class="project">
-                <span>
-                    <img src="images/8.jpeg" alt="">
-                </span>
-                <h3>Hotel Booking System</h3>
-                <p>Developed the frontend of a hotel booking system, featuring an intuitive interface for browsing hotels, checking availability, and making bookings. The design ensures a seamless user experience, making the booking process quick and efficient.</p>
-                <span>
-                    <a href="https://github.com/bilal3110/Hotel-Booking-Site" target="_blank">View Code</a>
-                </span>
-            </div>
-        </div>
-        <span id="project-btn">
-            <a href="">View More</a>
-        </span>
-    </section>
-
-    <section class="about" id="about">
-        <div class="abt-container">
-            <div class="abt-txt">
-                <h3>About Me</h3>
-                <p> A Full Stack Developer specializing in PHP and Laravel with a background in Software Engineering. I create dynamic, scalable websites using Laravel for feature-rich applications, MySQL for robust database design, and JavaScript, jQuery, and Bootstrap for responsive, user-friendly interfaces. My approach is client-focused, ensuring tailored solutions with a commitment to timely delivery and guaranteed satisfaction. Let's work together to bring your project vision to life!
-                </p>
-                <h4>
-                    Let's connect to discuss how I can help you succeed!
-                </h4>
-            </div>
-
-            <div class="abt-img">
-                <img src="images/profile.jpg" alt="">
-            </div>
-        </div>
-    </section>
-
-    <div class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <h3>Hey, feel free to reach out!</h3>
-        <span id="con-icons">
-            <p><i class="fa-solid fa-phone"></i> +92-334-9877-300</p>
-            <p>
-                <i class="fa-solid fa-envelope"></i> sheikhbilal1025@gmail.com
+    <!-- Projects -->
+    <section class="projects" id="portfolio">
+      <h1 id="s-head">My Work</h1>
+      <div class="project-cards">
+        <div class="p-card1">
+          <div class="card-content">
+            <h2 class="project-title">PlantReco – Plant Recognition System</h2>
+            <p class="project-description">
+              PlantReco is a web-based plant recognition system that combines
+              Python's machine learning capabilities with a PHP backend for
+              seamless user interaction. It allows users to upload leaf images
+              and instantly receive identification results using a trained AI
+              model.
             </p>
-        </span>
-        <span id="head-icons">
-          <a href="https://github.com/bilal3110" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-          <a href="https://www.linkedin.com/in/bilal-aqeel-b7556321b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/webdev.by.bilal/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
-        </span>
-    </div>
+            <a href="#">View Code</a>
+          </div>
+          <div class="click-hint">Hover to explore</div>
+        </div>
+        <div class="p-card2">
+          <div class="card-content">
+            <h2 class="project-title">
+              Zameen Desk – Real Estate Management System
+            </h2>
+            <p class="project-description">
+              Zameen Desk is a Laravel-powered real estate system built for
+              agencies in Pakistan. It manages sales, rentals, clients, and
+              office expenses in one dashboard. With smart features like seeker
+              tracking and deal updates, it replaces registers and highlights my
+              skills in backend, API integration, and SaaS development.
+            </p>
+            <a href="#">View Code</a>
+          </div>
+          <div class="click-hint">Hover to explore</div>
+        </div>
+        <div class="p-card3">
+          <div class="card-content">
+            <h2 class="project-title">School Management System</h2>
+            <p class="project-description">
+              This LMS is a comprehensive solution featuring a user-friendly
+              school website, an admin panel for managing courses and students,
+              and a student portal for accessing materials and tracking
+              progress. It enhanced my skills in developing scalable and
+              efficient web applications.
+            </p>
+            <a href="#">View Code</a>
+          </div>
+          <div class="click-hint">Hover to explore</div>
+        </div>
+        <div class="p-card4">
+          <div class="card-content">
+            <h2 class="project-title">Hotel Booking Site</h2>
+            <p class="project-description">
+              Developed the frontend of a hotel booking system, featuring an
+              intuitive interface for browsing hotels, checking availability,
+              and making bookings. The design ensures a seamless user
+              experience, making the booking process quick and efficient.
+            </p>
+            <a href="#">View Code</a>
+          </div>
+          <div class="click-hint">Hover to explore</div>
+        </div>
+      </div>
+      <div class="project-btn">
+        <a href="">View More</a>
+      </div>
+    </section>
 
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h1 id="s-head">Keep In Touch</h1>
+      <p id="c-sub">Got a project in mind? I’d love to hear about it!</p>
+      <div class="contact-list">
+          <a href=""><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
+          <a href=""><i class="fa-regular fa-envelope"></i>Email</a>
+          <a href=""><i class="fa-brands fa-github"></i>Github</a>
+          <a href=""><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+          <a href=""><i class="fa-brands fa-instagram"></i>Instagram</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-      <p>Copyright @ 2025. Developed by <a href="https://www.instagram.com/webdev.by.bilal/"">Bilal A.</a></p>
-  </footer>
+      <p>Copyright &copy; 2025 All rights reserved</p>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
-      <!-- Script Start -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-      <script src="js/script.js"></script>
-      <!-- Script End --> 
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"
-  ></script>
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"
-  ></script>
 </html>
