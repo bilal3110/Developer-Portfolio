@@ -10,6 +10,103 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+
+    <!-- Chat bot -->
+    <script>
+      (function () {
+        if (!window.chatbase || window.chatbase("getState") !== "initialized") {
+          window.chatbase = (...arguments) => {
+            if (!window.chatbase.q) {
+              window.chatbase.q = [];
+            }
+            window.chatbase.q.push(arguments);
+          };
+          window.chatbase = new Proxy(window.chatbase, {
+            get(target, prop) {
+              if (prop === "q") {
+                return target.q;
+              }
+              return (...args) => target(prop, ...args);
+            },
+          });
+        }
+        const onLoad = function () {
+          const script = document.createElement("script");
+          script.src = "https://www.chatbase.co/embed.min.js";
+          script.id = "2TMNaB2n5MPKDAEYXB8wB";
+          script.domain = "www.chatbase.co";
+          document.body.appendChild(script);
+        };
+        if (document.readyState === "complete") {
+          onLoad();
+        } else {
+          window.addEventListener("load", onLoad);
+        }
+      })();
+    </script>
+    <script>
+      window.chatbaseConfig = {
+        chatbotId: "2TMNaB2n5MPKDAEYXB8wB",
+        chatTitle: "Ask Bilal 🤖",
+        welcomeMessage:
+          "Hi! I'm Bilal's assistant. Ask me anything about my work!",
+        disableDefaultLauncher: true,
+        // launcher: false, 
+      };
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const chatButton = document.createElement('button');
+        chatButton.innerHTML = 'Ask Bilal 🤖';
+        chatButton.id = 'custom-chat-button';
+        chatButton.style.cssText = `
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 1000;
+          background: #6366f1;
+          color: white;
+          border: none;
+          border-radius: 50px;
+          padding: 12px 24px;
+          font-size: 16px;
+          font-weight: 600;
+          cursor: pointer;
+          box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+          transition: all 0.3s ease;
+        `;
+        
+        chatButton.addEventListener('mouseenter', function() {
+          this.style.transform = 'scale(1.05)';
+          this.style.boxShadow = '0 6px 20px rgba(99, 102, 241, 0.4)';
+        });
+        
+        chatButton.addEventListener('mouseleave', function() {
+          this.style.transform = 'scale(1)';
+          this.style.boxShadow = '0 4px 12px rgba(99, 102, 241, 0.3)';
+        });
+        
+        chatButton.addEventListener('click', function() {
+          if (window.chatbase) {
+            window.chatbase('open');
+            setTimeout(() => {
+              const defaultLauncher = document.querySelector('[data-testid="launcher"]');
+              if (defaultLauncher) {
+                defaultLauncher.style.display = 'none';
+              }
+              const launcherElements = document.querySelectorAll('[class*="launcher"], [id*="launcher"]');
+              launcherElements.forEach(el => {
+                if (el !== chatButton) {
+                  el.style.display = 'none';
+                }
+              });
+            }, 100);
+          }
+        });
+        
+        document.body.appendChild(chatButton);
+      });
+    </script>
     <title>Bilal A.</title>
   </head>
   <body>
@@ -68,9 +165,17 @@
           computer science and building innovative digital solutions.
         </p>
         <span class="head-btns">
-          <a href="https://github.com/bilal3110" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
-          <a href="https://www.linkedin.com/in/bilal-aqeel-b7556321b/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-          <a href="https://www.instagram.com/webdev.by.bilal/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+          <a href="https://github.com/bilal3110" target="_blank"
+            ><i class="fa-brands fa-github"></i>Github</a
+          >
+          <a
+            href="https://www.linkedin.com/in/bilal-aqeel-b7556321b/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+          >
+          <a href="https://www.instagram.com/webdev.by.bilal/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i>Instagram</a
+          >
         </span>
       </div>
     </main>
@@ -310,7 +415,11 @@
               and instantly receive identification results using a trained AI
               model.
             </p>
-            <a href="https://github.com/bilal3110/PlantRecognitionSystem" target="_blank">View Code</a>
+            <a
+              href="https://github.com/bilal3110/PlantRecognitionSystem"
+              target="_blank"
+              >View Code</a
+            >
           </div>
           <div class="click-hint">Hover to explore</div>
         </div>
@@ -326,7 +435,11 @@
               tracking and deal updates, it replaces registers and highlights my
               skills in backend, API integration, and SaaS development.
             </p>
-            <a href="https://github.com/bilal3110/RealEstateSystem" target="_blank">View Code</a>
+            <a
+              href="https://github.com/bilal3110/RealEstateSystem"
+              target="_blank"
+              >View Code</a
+            >
           </div>
           <div class="click-hint">Hover to explore</div>
         </div>
@@ -340,7 +453,11 @@
               progress. It enhanced my skills in developing scalable and
               efficient web applications.
             </p>
-            <a href="https://github.com/bilal3110/LMS/tree/project-fix" target="_blank">View Code</a>
+            <a
+              href="https://github.com/bilal3110/LMS/tree/project-fix"
+              target="_blank"
+              >View Code</a
+            >
           </div>
           <div class="click-hint">Hover to explore</div>
         </div>
@@ -353,7 +470,11 @@
               and making bookings. The design ensures a seamless user
               experience, making the booking process quick and efficient.
             </p>
-            <a href="https://github.com/bilal3110/Hotel-Booking-Site" target="_blank">View Code</a>
+            <a
+              href="https://github.com/bilal3110/Hotel-Booking-Site"
+              target="_blank"
+              >View Code</a
+            >
           </div>
           <div class="click-hint">Hover to explore</div>
         </div>
@@ -368,11 +489,23 @@
       <h1 id="s-head">Keep In Touch</h1>
       <p id="c-sub">Got a project in mind? I’d love to hear about it!</p>
       <div class="contact-list">
-          <a href="https://wa.me/923349877300"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
-          <a href="mailto:bilalaqeel.dev@gmail.com"><i class="fa-regular fa-envelope"></i>Email</a>
-          <a href="https://github.com/bilal3110" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
-          <a href="https://www.linkedin.com/in/bilal-aqeel-b7556321b/" target="_blank"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-          <a href="https://www.instagram.com/webdev.by.bilal/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
+        <a href="https://wa.me/923349877300"
+          ><i class="fa-brands fa-whatsapp"></i>WhatsApp</a
+        >
+        <a href="mailto:bilalaqeel.dev@gmail.com"
+          ><i class="fa-regular fa-envelope"></i>Email</a
+        >
+        <a href="https://github.com/bilal3110" target="_blank"
+          ><i class="fa-brands fa-github"></i>Github</a
+        >
+        <a
+          href="https://www.linkedin.com/in/bilal-aqeel-b7556321b/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+        >
+        <a href="https://www.instagram.com/webdev.by.bilal/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i>Instagram</a
+        >
       </div>
     </section>
 
