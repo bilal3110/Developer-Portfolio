@@ -49,7 +49,7 @@ document.addEventListener("click", (e) => {
     }
 });
 
-// Close mobile menu on window resize (if screen becomes larger)
+// Close mobile menu on window resize 
 window.addEventListener("resize", () => {
     if (window.innerWidth > 767) {
         hamburger.classList.remove("active");
@@ -67,7 +67,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         const targetSection = document.querySelector(targetId);
         
         if (targetSection) {
-            const offsetTop = targetSection.offsetTop - 80; // Adjust for fixed nav height
+            const offsetTop = targetSection.offsetTop - 80; 
             
             window.scrollTo({
                 top: offsetTop,
