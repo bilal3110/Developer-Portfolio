@@ -1240,17 +1240,17 @@ footer p{
   
   .p-card1, .p-card2, .p-card3, .p-card4 {
       width: 100%;
-      min-height: 200px;
+      min-height: 220px;
   }
   
   .project-title {
-      font-size: 1.1rem;
-      margin-bottom: 10px;
+      font-size: 0.8rem;
+      margin-bottom: 2px;
   }
   
   .project-description {
       font-size: 0.75rem;
-      margin-bottom: 15px;
+      margin-bottom: 6px;
   }
   
   .p-card1 a, .p-card2 a, .p-card3 a, .p-card4 a {
